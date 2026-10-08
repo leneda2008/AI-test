@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shop — NOVA</title>
+    <meta name="description" content="Explore considered clothing, shoes, bags, and accessories from the NOVA everyday collection.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" /><link rel="stylesheet" href="css/upgrades.css" />
+  </head>
+  <body data-page="shop">
+    <div data-site-header></div>
+    <main class="page-shell">
+      <div class="breadcrumbs"><a href="index.html">Home</a><span>/</span><span>Shop</span></div>
+      <div class="page-intro">
+        <p class="eyebrow">THE NOVA COLLECTION</p>
+        <h1>Find your <em>everyday.</em></h1>
+        <p>Pieces to wear on repeat. Made with intention, chosen by you.</p>
+      </div>
+      <div class="shop-toolbar">
+        <div class="shop-search">
+          <span>⌕</span
+          ><label class="sr-only" for="shop-search">Search pieces</label
+          ><input
+            id="shop-search"
+            type="search"
+            placeholder="Search pieces..."
+          />
+        </div>
+        <button class="btn btn-outline mobile-filter-trigger" data-filter-open>Filters <span>＋</span></button><label class="sort-label"
+          >Sort by
+          <select id="sort-products">
+            <option value="featured">Featured</option>
+            <option value="newest">Newest</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+            <option value="rating">Highest Rated</option>
+            <option value="popular">Most Popular</option>
+            <option value="sale">Sale</option>
+          </select></label
+        >
+      </div>
+      <div class="active-filter-chips" id="active-filter-chips" aria-live="polite"></div>
+      <div class="shop-layout">
+        <aside class="filter-panel" id="shop-filter-panel" aria-label="Product filters">
+          <div class="filter-head">
+            <h2>Refine</h2>
+            <button class="filter-close" data-filter-close aria-label="Close filters">×</button><button id="clear-filters" class="text-link">Clear all</button>
+          </div>
+          <div class="filter-group">
+            <h3>Category</h3>
+            <div id="category-filters" class="filter-options"></div>
+          </div>
+          <div class="filter-group"><h3>Price range</h3><div class="price-range-inputs"><label>Min <input id="min-price" type="number" min="0" placeholder="₦0"></label><label>Max <input id="max-price" type="number" min="0" placeholder="₦150,000"></label></div></div>
+          <div class="filter-group"><h3>Size</h3><div class="filter-check-grid" id="size-filters"></div></div>
+          <div class="filter-group"><h3>Color</h3><div class="filter-check-grid" id="color-filters"></div></div>
+          <div class="filter-group"><label for="rating-filter">Customer rating</label><select id="rating-filter" class="filter-select"><option value="0">Any rating</option><option value="4">4★ and above</option><option value="3">3★ and above</option></select></div>
+          <div class="filter-group"><label for="availability-filter">Availability</label><select id="availability-filter" class="filter-select"><option value="all">Any availability</option><option value="stock">In stock</option><option value="low">Low stock</option><option value="out">Out of stock</option></select></div>
+          <div class="filter-group"><h3>Shop by edit</h3><div class="filter-check-grid filter-edits"><label><input type="checkbox" value="new" data-edit-filter> New arrivals</label><label><input type="checkbox" value="trending" data-edit-filter> Trending</label><label><input type="checkbox" value="featured" data-edit-filter> Featured</label><label><input type="checkbox" value="sale" data-edit-filter> On sale</label></div></div>
+          <button class="btn btn-dark filter-apply" data-filter-close>Show results</button><div class="filter-note">A wardrobe, thoughtfully edited.</div>
+        </aside>
+        <section class="shop-results">
+          <div class="results-meta">
+            <span id="results-count" aria-live="polite"></span><span>PRICES IN NGN</span>
+          </div>
+          <div id="shop-products" class="product-grid"></div>
+          <div id="empty-products" class="empty-state" hidden>
+            <span>⌕</span>
+            <h2>No products found.</h2>
+            <p>Try searching for something else or reset your filters.</p>
+            <button id="clear-shop-search" class="btn btn-outline" type="button">Clear search</button>
+          </div>
+          <section id="shop-search-recommendations" class="shop-search-recommendations" hidden><p class="eyebrow">A FEW PIECES TO EXPLORE</p><div id="shop-search-recommendation-cards" class="product-grid"></div></section>
+        </section>
+      </div>
+      <section class="recent-shop-section" id="recent-shop-section" hidden>
+        <div class="section-heading"><div><p class="eyebrow">BACK ON YOUR MIND</p><h2>Recently viewed.</h2></div></div>
+        <div id="recent-shop-products" class="product-grid"></div>
+      </section>
+    </main>
+    <div data-site-footer></div>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

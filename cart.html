@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Bag — NOVA</title>
+    <meta
+      name="description"
+      content="Review your selected NOVA pieces and see your order total before checkout."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/upgrades.css" />
+  </head>
+  <body data-page="cart">
+    <div data-site-header></div>
+    <main class="page-shell">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a><span>/</span><span>Cart</span>
+      </div>
+      <div class="page-intro compact-intro">
+        <p class="eyebrow">YOUR NOVA EDIT</p>
+        <h1>Your <em>bag.</em></h1>
+        <p id="cart-item-count">A few good choices.</p>
+      </div>
+      <div id="cart-content" class="cart-layout"></div>
+    </main>
+    <div data-site-footer></div>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8f7f4" />
+    <meta
+      name="description"
+      content="NOVA — considered essentials for every day."
+    />
+    <title>NOVA — Considered essentials</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" /><link rel="stylesheet" href="css/upgrades.css" />
+  </head>
+  <body data-page="home">
+    <div data-site-header></div>
+    <main>
+      <section class="hero-wrap">
+        <div
+          class="hero-image"
+          role="img"
+          aria-label="Model wearing refined everyday fashion"
+        ></div>
+        <div class="hero-copy">
+          <p class="eyebrow">NOVA · MODERN FASHION, ELEVATED</p>
+          <h1>Style that<br /><em>speaks</em> for you.</h1>
+          <p class="hero-lede">
+            Thoughtful pieces. Effortless presence.<br />Made for the life you
+            actually live.
+          </p>
+          <div class="flex flex-wrap gap-3 mt-8">
+            <a class="btn btn-dark" href="shop.html"
+              >Shop the collection <span>↗</span></a
+            ><a class="btn btn-light" href="about.html">Our point of view</a>
+          </div>
+          <p class="hero-note">01 — A little less, a lot more.</p>
+        </div>
+        <div class="hero-index">N / 26</div>
+      </section>
+      <section class="section-shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">FIND YOUR FORM</p>
+            <h2>Made to move with you.</h2>
+          </div>
+          <a href="shop.html" class="text-link">Shop all categories ↗</a>
+        </div>
+        <div class="category-grid">
+          <a href="shop.html?category=Men" class="category-card"
+            ><img
+              src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=1000&q=85"
+              alt="Men's collection"
+            /><span>01 / MEN</span>
+            <h3>Grounded essentials</h3>
+            <b>Explore ↗</b></a
+          ><a href="shop.html?category=Women" class="category-card"
+            ><img
+              src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=85"
+              alt="Women's collection"
+            /><span>02 / WOMEN</span>
+            <h3>Quiet confidence</h3>
+            <b>Explore ↗</b></a
+          ><a href="shop.html?category=Accessories" class="category-card"
+            ><img
+              src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1000&q=85"
+              alt="Accessories collection"
+            /><span>03 / OBJECTS</span>
+            <h3>Finishing touches</h3>
+            <b>Explore ↗</b></a
+          >
+        </div>
+      </section>
+      <section class="section-shell soft-bg">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE EDIT · 01</p>
+            <h2>Pieces with a point of view.</h2>
+          </div>
+          <a href="shop.html" class="text-link">Explore the edit ↗</a>
+        </div>
+        <div id="featured-products" class="product-grid"></div>
+      </section>
+      <section class="promo-band">
+        <div>
+          <p class="eyebrow">A GOOD TIME TO FIND YOURS</p>
+          <h2>Considered style.<br /><em>Considerable</em> savings.</h2>
+          <p>
+            Up to 30% off selected pieces. A few favourites, for a little less.
+          </p>
+          <a href="shop.html?sort=sale" class="btn btn-light mt-6"
+            >Shop the sale ↗</a
+          >
+        </div>
+        <div class="promo-art">NOVA <span>OBJECTS FOR LIVING</span></div>
+      </section>
+      <section class="sale-countdown" aria-labelledby="sale-countdown-title"><div><p class="eyebrow">A LIMITED NOVA EDIT</p><h2 id="sale-countdown-title">Mid-season, <em>in motion.</em></h2><p>Up to 40% off select pieces. A few days to find something lasting.</p><a class="btn btn-dark" href="shop.html?sort=sale">Explore the edit ↗</a></div><div class="countdown-clock" data-countdown><div><strong data-count-days>00</strong><span>Days</span></div><b>:</b><div><strong data-count-hours>00</strong><span>Hours</span></div><b>:</b><div><strong data-count-minutes>00</strong><span>Minutes</span></div><b>:</b><div><strong data-count-seconds>00</strong><span>Seconds</span></div></div></section>
+      <section class="section-shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">JUST ARRIVED</p>
+            <h2>New things, naturally.</h2>
+          </div>
+          <a href="shop.html?sort=newest" class="text-link">See what's new ↗</a>
+        </div>
+        <div id="new-products" class="product-grid"></div>
+      </section>
+      <section class="section-shell soft-bg">
+        <div class="section-heading"><div><p class="eyebrow">MOST TALKED ABOUT</p><h2>Trending now.</h2></div><a href="shop.html" class="text-link">Shop the edit ↗</a></div>
+        <div id="trending-products" class="product-grid"></div>
+      </section>
+      <section class="section-shell" id="because-viewed-section" hidden><div class="section-heading"><div><p class="eyebrow">A LITTLE MORE LIKE THAT</p><h2>Because you viewed.</h2></div></div><div id="because-viewed-products" class="product-grid"></div></section>
+      <section class="section-shell soft-bg" id="wishlist-recs-section" hidden><div class="section-heading"><div><p class="eyebrow">FROM YOUR SAVED EDIT</p><h2>Based on your wishlist.</h2></div></div><div id="wishlist-recs-products" class="product-grid"></div></section>
+      <section class="section-shell" id="recent-home-section" hidden>
+        <div class="section-heading"><div><p class="eyebrow">BACK ON YOUR MIND</p><h2>Recently viewed.</h2></div></div>
+        <div id="recent-home-products" class="product-grid"></div>
+      </section>
+      <section class="values-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE NOVA STANDARD</p>
+            <h2>Good by design.</h2>
+          </div>
+          <p class="muted max-w-sm">
+            The details matter. From the way it feels to how it finds its way to
+            you.
+          </p>
+        </div>
+        <div class="values-grid">
+          <article>
+            <span>01</span>
+            <h3>Delivery, on us</h3>
+            <p>Complimentary shipping on orders over ₦75,000.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Easy does it</h3>
+            <p>Simple returns within 14 days of delivery.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Made to last</h3>
+            <p>Thoughtful materials and considered construction.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Here to help</h3>
+            <p>A real person, whenever you need a hand.</p>
+          </article>
+        </div>
+      </section>
+      <section class="quote-section">
+        <p class="eyebrow">KIND WORDS, WORN OFTEN</p>
+        <blockquote>
+          “The kind of pieces you reach for without thinking — and feel good in
+          all day.”
+        </blockquote>
+        <p class="muted">AMINA O. <span>·</span> LAGOS, NG</p>
+        <div class="quote-dots">● ○ ○</div>
+      </section>
+      <section class="newsletter">
+        <div>
+          <p class="eyebrow">NOTES FROM NOVA</p>
+          <h2>Good things, occasionally.</h2>
+          <p>New arrivals, considered ideas, and the odd note worth opening.</p>
+        </div>
+        <form id="newsletter-form" class="newsletter-form">
+          <label class="sr-only" for="newsletter-email"
+            >Your email address</label
+          ><input
+            id="newsletter-email"
+            type="email"
+            placeholder="Your email address"
+            required
+          /><button aria-label="Subscribe">Join us ↗</button
+          ><small data-form-message></small>
+        </form>
+      </section>
+    </main>
+    <div data-site-footer></div>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

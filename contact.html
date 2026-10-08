@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — NOVA</title>
+    <meta name="description" content="Get in touch with the NOVA studio for questions about the collection, fit, or your order.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" /><link rel="stylesheet" href="css/upgrades.css" />
+  </head>
+  <body data-page="contact">
+    <div data-site-header></div>
+    <main class="page-shell contact-layout">
+      <section class="contact-intro">
+        <p class="eyebrow">WE'RE HERE FOR YOU</p>
+        <h1>Let's talk<br /><em>things through.</em></h1>
+        <p>
+          Questions about a piece, an order, or just want to say hello? Leave us
+          a note.
+        </p>
+        <div class="contact-details">
+          <span>EMAIL</span
+          ><a href="mailto:hello@nova.studio">hello@nova.studio</a
+          ><span>STUDIO</span>
+          <p>Lagos, Nigeria<br />Monday – Friday, 9am – 5pm</p>
+        </div>
+      </section>
+      <form id="contact-form" class="form-card">
+        <h2>Send us a note.</h2>
+        <label
+          >Full name<input name="name" autocomplete="name" required /></label
+        ><label
+          >Email address<input
+            name="email"
+            type="email"
+            autocomplete="email"
+            required /></label
+        ><label>Subject<input name="subject" required /></label
+        ><label
+          >Your message<textarea
+            name="message"
+            rows="5"
+            required
+          ></textarea></label
+        ><button class="btn btn-dark">Send message ↗</button>
+        <p class="form-feedback" data-contact-message aria-live="polite"></p>
+        <small>Your message stays in this demo and is not sent anywhere.</small>
+      </form>
+    </main>
+    <div data-site-footer></div>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

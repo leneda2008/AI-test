@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product — NOVA</title>
+    <meta name="description" content="Discover a considered NOVA fashion essential, with product details, fit guidance, and customer reviews.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" /><link rel="stylesheet" href="css/upgrades.css" />
+  </head>
+  <body data-page="product">
+    <div data-site-header></div>
+    <main class="page-shell">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a><span>/</span><a href="shop.html">Shop</a
+        ><span>/</span><a href="shop.html" id="product-category-crumb">Category</a><span>/</span><span id="product-crumb">Piece</span>
+      </div>
+      <div id="product-detail" class="product-detail"></div>
+      <section class="section-shell related-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">A GOOD MATCH</p>
+            <h2>You might also like.</h2>
+          </div>
+          <a href="shop.html" class="text-link">View all ↗</a>
+        </div>
+        <div id="related-products" class="product-grid"></div>
+      </section>
+      <section class="section-shell recent-section" id="recent-product-section" hidden>
+        <div class="section-heading"><div><p class="eyebrow">BACK ON YOUR MIND</p><h2>Recently viewed.</h2></div></div>
+        <div id="recent-product-products" class="product-grid"></div>
+      </section>
+    </main>
+    <div data-site-footer></div>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

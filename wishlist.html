@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Saved Pieces — NOVA</title>
+    <meta name="description" content="Return to the pieces you saved in your personal NOVA wishlist.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" /><link rel="stylesheet" href="css/upgrades.css" />
+  </head>
+  <body data-page="wishlist">
+    <div data-site-header></div>
+    <main class="page-shell">
+      <div class="page-intro compact-intro">
+        <p class="eyebrow">THE SHORTLIST</p>
+        <h1>Saved for <em>later.</em></h1>
+        <p>Your pieces, waiting patiently.</p>
+      </div>
+      <div id="wishlist-products" class="product-grid wishlist-grid"></div>
+      <div id="wishlist-empty" class="empty-state" hidden>
+        <span>♡</span>
+        <h2>Nothing saved yet.</h2>
+        <p>Save the pieces you love and come back to them whenever you like.</p>
+        <a class="btn btn-dark mt-4" href="shop.html"
+          >Explore the collection ↗</a
+        >
+      </div>
+    </main>
+    <div data-site-footer></div>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

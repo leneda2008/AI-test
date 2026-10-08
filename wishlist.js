@@ -1,0 +1,3 @@
+import { products, renderCards, bindProductCards } from './products.js';
+import { getWishlist } from './utils.js';
+export function initWishlist(){const root=document.querySelector('#wishlist-products');if(!root)return;const empty=document.querySelector('#wishlist-empty');const render=()=>{const hadFocus=Boolean(document.activeElement?.closest('#wishlist-products'));const saved=getWishlist();const items=products.filter(p=>saved.includes(p.id));renderCards(root,items);empty.hidden=items.length>0;if(hadFocus){const next=root.querySelector('[data-wishlist-toggle]')||empty.querySelector('a');next?.focus();}};bindProductCards(root,render);window.addEventListener('nova:state-change',event=>{if(event.detail?.key==='nova-wishlist')render();});render();}
